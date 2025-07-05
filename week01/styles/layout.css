@@ -1,0 +1,11 @@
+body {
+    display: grid;
+}
+
+nav {
+    display: flex;
+}
+
+* {
+    color-scheme: #0905eb;
+}
