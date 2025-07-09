@@ -1,4 +1,4 @@
-body {
+ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -9,14 +9,16 @@ body {
 header {
   background-color: #1a3b5d;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
 }
 
 #course-title {
+  font-family: 'Merriweather', serif;
   display: block;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 nav {
@@ -26,22 +28,19 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
 }
 
-nav li {
-  margin: 0;
-}
-
-nav a {
+nav li a {
   display: block;
   padding: 1rem 1.5rem;
   color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
+
 
 nav a:hover {
   background-color: #555;
@@ -50,31 +49,35 @@ nav a:hover {
 
 
 main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
-
+ 
 .card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
   gap: 2rem;
 }
 
+
 .card {
   background-color: white;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 8px;
+  width: 57%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card h1,
 .card h2 {
   font-family: 'Merriweather', serif;
   color: #1a3b5d;
   margin-top: 0;
-}
-
+  text-align: center;
+} 
+ 
 .card img {
   width: 100%;
   max-width: 200px;
@@ -82,12 +85,7 @@ main {
   float: right;
   margin: 0 0 1rem 1rem;
   border-radius: 4px;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
+} 
 
 footer {
   text-align: center;
@@ -99,4 +97,19 @@ footer {
 
 footer p {
   margin: 0.3rem 0;
+}
+
+.country {
+  float: left;
+  margin-right: 1rem;
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Clear float after image inside the card */
+.card::after {
+  content: "";
+  display: table;
+  clear: both;
 }
