@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Designs - Joy Paulinus udoh - Place Page</title>
+    <meta name="description" content="Place Page">
+    <meta name="author" content="Joy Paulinus Udoh">
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Iceland Mountain</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/place-image-large.webp" media="(min-width:1000px)">
+                <source srcset="images/place-image-medium.webp" media="(min-width:500px)">
+                <img src="images/place-image-small.webp" alt="Iceland Mountains" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data-section">
+            <h2>Data</h2>
+            <div class="data-grid">
+                <div class="data-item">
+                    <p class="label">Area:</p>
+                    <p>103,000 km²</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Population:</p>
+                    <p>376,000</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Capital:</p>
+                    <p>Reykjavík</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Language:</p>
+                    <p>Icelandic</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Currency:</p>
+                    <p>Icelandic Króna (ISK)</p>
+                </div>
+                <div class="data-item">
+                    <p class="label">Time Zone:</p>
+                    <p>UTC+0 (GMT)</p>
+                </div>
+            </div>
+            
+            <div class="weather-section">
+                <h3>Weather <img class="weather-icon" src="images/cloud-icon.svg" alt="Cloudy weather icon"></h3>
+                <p>Temperature: <span id="temperature">38</span>°F</p>
+                <p>Conditions: Cloudy</p>
+                <p>Wind: <span id="wind-speed">10</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="current-year"></span> Joy Paulinus Udoh | Lagos Nigeria</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
