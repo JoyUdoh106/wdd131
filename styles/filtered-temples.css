@@ -102,14 +102,18 @@ figure img {
     width: 100%;
     height: auto;
     display: block;
+    order: 2;
 }
 
 figcaption {
-    text-align: left;
+    text-align: center;
     padding: 1rem;
     font-size: 0.95rem;
+    line-height: 1.6;
     font-weight: 500;
     color: #4A148C;
+    flex-grow: 1;
+    order: 1;
 }
 
 figcaption strong {

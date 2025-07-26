@@ -62,97 +62,71 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Salt Lake City, Utah, United States",
             dedicated: "1893, April, 6",
             area: 253015,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
+            imageUrl: 
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg"
         },
         {
-            templeName: "Rome Italy",
-            location: "Rome, Italy",
-            dedicated: "2019, March, 10",
-            area: 40000,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/1-Rome-Temple-2160340.jpg"
+            templeName: "Accra Ghana",
+            location: "Accra, Ghana",
+            dedicated: "2004, January, 11",
+            area: 17500,
+            imageUrl: 
+            "https://content.churchofjesuschrist.org/acp/bc/Africa%20West%20Area/temple%202021/400x250/accra_ghana_temple_lds.jpeg"
         },
         {
-            templeName: "Provo City Center",
-            location: "Provo, Utah, United States",
-            dedicated: "2016, March, 20",
-            area: 85084,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/400x250/provo-city-center-temple-1572512-wallpaper.jpg"
+            templeName: "Memphis Tennessee",
+            location: "Barlett, Tennessee, United states",
+            dedicated: "2000, April, 23",
+            area: 10890,
+            imageUrl: 
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/news-and-events/2019/03/400x250/Memphis-Temple-News-1920x1080.jpg"
         }
     ];
 
-    const templeGrid = document.querySelector('.temples-grid');
-    const pageTitle = document.querySelector('main h2');
+   const templeGrid = document.querySelector('.temples-grid');
+    const pageTitle = document.querySelector('main h2'); 
 
+    // --- Functions to Build and Display Cards ---
     function createTempleCard(temple) {
         const card = document.createElement('figure');
-        card.classList.add('temple-card');
-        card.innerHtml =  `
-            <h3>${temple.templeName}</h3>
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-            <div class="card-info">
-                <p><strong>Location:</strong> ${temple.location}</p>
-                <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-                <p><strong>Size:</strong> ${temple.area.toLocaleString()} sq ft</p>
-            </div>
+        card.innerHTML = `
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400" height="250">
+            <figcaption>
+                <strong>${temple.templeName}</strong>
+                Location: ${temple.location}<br>
+                Dedicated: ${temple.dedicated}<br>
+                Size: ${temple.area.toLocaleString()} sq ft
+            </figcaption>
         `;
         return card;
     }
 
     function displayTemples(templeList) {
-        templeGrid.innerHtml = '';
+        templeGrid.innerHTML = '';
         templeList.forEach(temple => {
             templeGrid.appendChild(createTempleCard(temple));
         });
     }
 
-    document.querySelector('#home').addEventListener('click', (e) => {
-        e.preventDefault();
-        pageTitle.textContent = 'Home';
-        displayTemples(temples);
-    });
-
-    document.querySelector('#old').addEventListener('click', (e) => { 
-        e.preventDefault();
-        pageTitle.textContent = 'Old Temples (Before 1900)';
-        displayTemples(temples.filter(t => new Date (t.dedicated).getFullYear() < 1900));
-    });
-
-    document.querySelector('#new').addEventListener('click', (e) => { 
-        e.preventDefault(); 
-        pageTitle.textContent = 'New Temples (After 2000)'; 
-        displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() > 2000));
-     });
-    document.querySelector('#large').addEventListener('click', (e) => { 
-        e.preventDefault(); 
-        pageTitle.textContent = 'Large Temples (> 90,000 sq ft)'; 
-        displayTemples(temples.filter(t => t.area > 90000)); 
-    });
-    document.querySelector('#small').addEventListener('click', (e) => { 
-        e.preventDefault(); 
-        pageTitle.textContent = 'Small Temples (< 10,000 sq ft)'; 
-        displayTemples(temples.filter(t => t.area < 10000)); 
-    });
-
-    const currentYearSpan = document.getElementById('current-year');
-    const currentYear = new Date().getFullYear();
-    currentYearSpan.textContent = currentYear;
-
-    const lastModifiedSpan = document.getElementById('last-modified');
-    const lastModified = document.lastModified;
-    lastModifiedSpan.textContent = lastModified;
+    // --- Filtering Event Listeners ---
+    document.querySelector('#home').addEventListener('click', (e) => { e.preventDefault(); pageTitle.textContent = 'Home'; displayTemples(temples); });
+    document.querySelector('#old').addEventListener('click', (e) => { e.preventDefault(); pageTitle.textContent = 'Old Temples'; displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() < 1900)); });
+    document.querySelector('#new').addEventListener('click', (e) => { e.preventDefault(); pageTitle.textContent = 'New Temples'; displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() > 2000)); });
+    document.querySelector('#large').addEventListener('click', (e) => { e.preventDefault(); pageTitle.textContent = 'Large Temples'; displayTemples(temples.filter(t => t.area > 90000)); });
+    document.querySelector('#small').addEventListener('click', (e) => { e.preventDefault(); pageTitle.textContent = 'Small Temples'; displayTemples(temples.filter(t => t.area < 10000)); });
+    
+    // --- Code for Footer and Hamburger Menu ---
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    document.getElementById('last-modified').textContent = document.lastModified;
 
     const menuButton = document.getElementById('menu-button');
     const nav = document.querySelector('nav');
 
     menuButton.addEventListener('click', () => {
         nav.classList.toggle('open');
-        if (nav.classList.contains('open')) {
-            menuButton.textContent = 'X';
-        } else {
-            menuButton.textContent = '☰';
-        }
+        menuButton.textContent = nav.classList.contains('open') ? 'X' : '☰';
     });
-
+    
+    // --- Initial Page Load ---
     displayTemples(temples);
-
 });
