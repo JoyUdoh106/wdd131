@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefcfb;
+    color: #333;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+h1, h2 {
+    color: #2a4d69;
+}
+.section {
+    margin-bottom: 2rem;
+}
+.color-box {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.wireframe-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border: 1px dashed #ccc;
+    }

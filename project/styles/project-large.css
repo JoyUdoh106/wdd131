@@ -25,30 +25,8 @@
         margin: 10px;
     }
 
-   .hero {
-        position: relative;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero img {
-        width: 70%;
-        height: 5%;
-        object-fit: cover;
-        display: block;
-
-    }
-
-    .hero-text {
-        position: absolute;
-        text-align: center;
-        top: 30%;
-        width: 60%;
-        background-color: #0e3e7c55;
+    .project-home {
+        max-width: 1600px;
     }
 
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Product Review</title>
+    <meta name="description" content="Product review">
+    <meta name="author" content="Joy Paulinus Udoh">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+    </header>
+    <main>
+        <h2>Product Review</h2>
+        <form method="get" action="review.html" id="reviewForm">
+            <label for="productSelect">Product Name</label>
+            <select id="productSelect" name="product" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="response">
+                    <label><input type="radio" name="rating" value="1" required />&#9733</label>
+                    <label><input type="radio" name="rating" value="2" required />&#9733;&#9733</label>
+                    <label><input type="radio" name="rating" value="3" required />&#9733;&#9733;&#9733</label>
+                    <label><input type="radio" name="rating" value="4" required />&#9733;&#9733;&#9733;&#9733</label>
+                    <label><input type="radio" name="rating" value="5" required />&#9733;&#9733;&#9733;&#9733;&#9733</label>
+                </div>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required/>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <div class="response">
+                    <label><input type="checkbox" id="durability" name="features" value="Durability" />Durability</label>
+                    <label><input type="checkbox" id="ease" name="features" value="Ease of Use" />Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="features" value="Performance" />Performance</label>
+                    <label><input type="checkbox" id="design" name="features" value="Design" />Design</label>
+                </div>
+            </fieldset>
+
+            <label for="review">Written Review <span>(Optional)</span></label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <label for="username">Your Full Name <span>(Optional)</span></label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review" />
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> 🌸 Joy Paulinus Udoh 🌸 Nigeria</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
