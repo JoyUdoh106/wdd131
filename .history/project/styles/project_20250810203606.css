@@ -354,7 +354,7 @@ body {
 }
 
 .footer-form {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1; /* Make it span full width on mobile */
     text-align: left;
 }
 .footer-form h4 {
@@ -398,3 +398,14 @@ body {
     border: 0;
 }
 
+/* Adjust footer grid for desktop */
+@media (min-width: 992px) {
+    .footer-container {
+         /* Adjust grid to give form more space */
+        grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+    }
+    .footer-about { grid-column: auto; }
+    .footer-form { grid-column: 2 / 3; }
+    .footer-links:first-of-type { grid-column: 3 / 4; }
+    .footer-links:last-of-type { grid-column: 4 / 5; }
+}

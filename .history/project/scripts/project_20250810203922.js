@@ -65,12 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             localStorage.setItem('biztrackUserName', userProfile.name);
             
+            // CRITERION 10: Modifying an element & CRITERION 14: Template Literals
             welcomeMessage.textContent = `Thanks for subscribing, ${userProfile.name}!`;
             
             contactForm.reset();
         });
     }
-   
+    
+    // CRITERION 9: Calling a second working function
     if (contactForm) {
         handleUserInteraction();
     }

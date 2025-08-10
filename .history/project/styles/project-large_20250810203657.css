@@ -60,12 +60,7 @@
         grid-column: auto; 
     }
     .footer-form { 
-        grid-column: 2 / 3; 
-    }
-    .footer-links:first-of-type { 
-        grid-column: 3 / 4; 
-    }
-    .footer-links:last-of-type { 
-        grid-column: 4 / 5; 
-    }
+        grid-column: 2 / 3; }
+    .footer-links:first-of-type { grid-column: 3 / 4; }
+    .footer-links:last-of-type { grid-column: 4 / 5; }
 }

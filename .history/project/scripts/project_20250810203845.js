@@ -52,25 +52,32 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleUserInteraction() {
         const storedName = localStorage.getItem('biztrackUserName');
         
+        // CRITERION 11: Conditional Branching
         if (storedName) {
             userProfile.name = storedName;
+            // CRITERION 14: JavaScript Template Literals
             welcomeMessage.textContent = `Welcome back, ${userProfile.name}!`;
         }
 
+        // CRITERION 10: Event Listening
         contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); 
+            event.preventDefault(); // Prevent actual form submission
             
+            // CRITERION 10: Selecting an element
             const nameInput = document.querySelector('#name-input');
             userProfile.name = nameInput.value;
 
+            // CRITERION 15: JavaScript localStorage (Setting item)
             localStorage.setItem('biztrackUserName', userProfile.name);
             
+            // CRITERION 10: Modifying an element & CRITERION 14: Template Literals
             welcomeMessage.textContent = `Thanks for subscribing, ${userProfile.name}!`;
             
             contactForm.reset();
         });
     }
-   
+    
+    // CRITERION 9: Calling a second working function
     if (contactForm) {
         handleUserInteraction();
     }

@@ -56,16 +56,8 @@
     .footer-container {
         grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
     }
-    .footer-about {
-        grid-column: auto; 
-    }
-    .footer-form { 
-        grid-column: 2 / 3; 
-    }
-    .footer-links:first-of-type { 
-        grid-column: 3 / 4; 
-    }
-    .footer-links:last-of-type { 
-        grid-column: 4 / 5; 
-    }
+    .footer-about { grid-column: auto; }
+    .footer-form { grid-column: 2 / 3; }
+    .footer-links:first-of-type { grid-column: 3 / 4; }
+    .footer-links:last-of-type { grid-column: 4 / 5; }
 }

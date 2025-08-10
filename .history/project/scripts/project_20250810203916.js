@@ -63,14 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const nameInput = document.querySelector('#name-input');
             userProfile.name = nameInput.value;
 
+            // CRITERION 15: JavaScript localStorage (Setting item)
             localStorage.setItem('biztrackUserName', userProfile.name);
             
+            // CRITERION 10: Modifying an element & CRITERION 14: Template Literals
             welcomeMessage.textContent = `Thanks for subscribing, ${userProfile.name}!`;
             
             contactForm.reset();
         });
     }
-   
+    
+    // CRITERION 9: Calling a second working function
     if (contactForm) {
         handleUserInteraction();
     }
