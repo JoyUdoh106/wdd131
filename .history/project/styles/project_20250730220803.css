@@ -1,0 +1,149 @@
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    background-color: #eee;
+    color: #ddd;
+    background-image: image;
+}
+
+header {
+    background-color: #0e3e7c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+header h1 {
+    font-size: 1.3rem;
+    font-family: 'Merriweather', serif;
+}
+
+main {
+    background-image: url(../images/project-hero-image.webp);
+    justify-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+nav {
+    display: none;
+}
+
+#menu-button {
+    font-size: 1.7rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #310f5e;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav a:hover, nav a.active {
+    background-color: #231b9a;
+}
+
+#infor {
+    color: white;
+    background-color: rgba(5, 39, 114, 0.562);
+    margin: 4px;
+    padding: 1px;
+}
+
+.morquee-button {
+    background-color: rgb(4, 107, 138);
+    border-radius: 6px;
+    border: rgba(93, 17, 138, 0.3);
+    padding: 5px;
+    color: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    color: white;
+}
+
+.project-home {
+    width: 90%;
+    background-color: rgba(8, 19, 165, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin: 2px 5px;
+    border: rgba(74, 226, 231, 0.5);
+    border-radius: 6px;
+    max-width: 700px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ol {
+     list-style-type: none;
+}
+
+footer {
+    background-color: #0e3e7c;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+.sociallinks a img {
+    width: 50px;
+    height: auto;
+    text-decoration: none;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}

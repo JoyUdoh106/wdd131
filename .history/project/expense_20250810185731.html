@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracking - Biztrack</title>
+    <meta name="author" content="Joy Paulinus Udoh">
+    <meta name="description" content="Biztrack Expense Page">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> Biztrack</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="expense.html" class="nav-link active">Expense</a></li>
+                    <li><a href="budget.html" class="nav-link">Budget</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary get-started-btn">Get Started</a>
+            <button class="nav-toggle" id="nav-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+     <div class="mobile-nav" id="mobile-nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="expense.html" class="nav-link active">Expense</a>
+        <a href="budget.html" class="nav-link">Budget</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+    </div>
+
+    <main class="content-page">
+        <div class="container">
+            <h1>Mastering Expense Tracking</h1>
+            <p class="subtitle">Understand what expense tracking is, why it's crucial, and how to do it effectively.</p>
+
+            <article class="content-article reveal">
+                <h2>What is Expense Tracking?</h2>
+                <p>Expense tracking is the process of recording all your expenditures. This includes everything from your morning coffee to your monthly rent. The goal is to gain a clear picture of where your money is going. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+
+            <article class="content-article reveal">
+                <h2>Why Does It Matter?</h2>
+                <p>Tracking your expenses is the first step toward taking control of your financial life. It helps you identify spending habits, cut unnecessary costs, stick to your budget, and ultimately, save more money for your financial goals. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+
+            <article class="content-article reveal">
+                <h2>Tips for Effective Tracking</h2>
+                <ul>
+                    <li><strong>Be Consistent:</strong> Record expenses daily to avoid forgetting them.</li>
+                    <li><strong>Categorize Your Spending:</strong> Group expenses into categories like 'Groceries', 'Transport', 'Entertainment' to see where you spend the most.</li>
+                    <li><strong>Use the Right Tools:</strong> Whether it's a simple notebook, a spreadsheet, or a dedicated app, find a method that works for you.</li>
+                    <li><strong>Review Regularly:</strong> Set aside time each week or month to review your spending and adjust your habits.</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> Biztrack</a>
+                <p>A simple, clear, and informative website to help you manage your finances.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="expense.html">Expense</a></li>
+                    <li><a href="budget.html">Budget</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Biztrack. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="bottom-nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="expense.html" class="bottom-nav-link active">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Expense</span>
+        </a>
+        <a href="budget.html" class="bottom-nav-link">
+            <i class="fas fa-wallet"></i>
+            <span>Budget</span>
+        </a>
+        <a href="profile.html" class="bottom-nav-link">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

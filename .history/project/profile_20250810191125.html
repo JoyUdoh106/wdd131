@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Profile- Biztrack</title>
+    <meta name="author" content="Joy Paulinus Udoh">
+    <meta name="description" content="Biztrack Profile Page">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> Biztrack</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="expense.html" class="nav-link">Expense</a></li>
+                    <li><a href="budget.html" class="nav-link">Budget</a></li>
+                    <li><a href="profile.html" class="nav-link active">Profile</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary get-started-btn">Get Started</a>
+            <button class="nav-toggle" id="nav-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (Hidden by default) -->
+    <div class="mobile-nav" id="mobile-nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="expense.html" class="nav-link">Expense</a>
+        <a href="budget.html" class="nav-link">Budget</a>
+        <a href="profile.html" class="nav-link active">Profile</a>
+    </div>
+
+    <main class="content-page">
+        <div class="container">
+            <h1>Your Financial Profile</h1>
+            <p class="subtitle">A sample page to reflect on habits, set goals, and make informed decisions.</p>
+
+            <article class="content-article reveal">
+                <h2>Reflecting on Your Financial Habits</h2>
+                <p>This is where you would see a summary of your financial activity. By reviewing categorized spending data, you can identify patterns. For example, you might notice you spend more on dining out than you thought. This reflection is key to making positive changes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="sample-data">
+                    <p><strong>Sample Insight:</strong> "You spent 30% of your discretionary budget on 'Coffee Shops' this month."</p>
+                </div>
+            </article>
+
+            <article class="content-article reveal">
+                <h2>Setting Personal Goals</h2>
+                <p>Based on your reflections, you can set tangible financial goals. These goals give your budgeting and saving efforts a clear purpose. An effective financial tool would allow you to create and track these goals directly.</p>
+                <ul>
+                    <li><strong>Goal Example 1:</strong> Save $5,000 for a down payment in 12 months.</li>
+                    <li><strong>Goal Example 2:</strong> Reduce 'Dining Out' spending by 20% next month.</li>
+                    <li><strong>Goal Example 3:</strong> Pay off a credit card balance of $1,500 in 6 months.</li>
+                </ul>
+            </article>
+            
+            <article class="content-article reveal">
+                <h2>Making Informed Decisions</h2>
+                <p>With clear data and defined goals, you are empowered to make smarter financial decisions. Instead of guessing, you can confidently allocate your resources to what matters most to you. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> Biztrack</a>
+                <p>A simple, clear, and informative website to help you manage your finances.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="expense.html">Expense</a></li>
+                    <li><a href="budget.html">Budget</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Biztrack. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="bottom-nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="expense.html" class="bottom-nav-link">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Expense</span>
+        </a>
+        <a href="budget.html" class="bottom-nav-link">
+            <i class="fas fa-wallet"></i>
+            <span>Budget</span>
+        </a>
+        <a href="profile.html" class="bottom-nav-link active">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+</body>
+</html>

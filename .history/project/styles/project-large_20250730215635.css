@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    #infor {
+        padding: 7px;
+        margin: 10px;
+    }
+
+    .project-home {
+        max-width: 1600px;
+    }
+
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Basic- Biztrack</title>
+    <meta name="author" content="Joy Paulinus Udoh">
+    <meta name="description" content="Biztrack Expense Page">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> Biztrack</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="expense.html" class="nav-link">Expense</a></li>
+                    <li><a href="budget.html" class="nav-link active">Budget</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary get-started-btn">Get Started</a>
+            <button class="nav-toggle" id="nav-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="expense.html" class="nav-link">Expense</a>
+        <a href="budget.html" class="nav-link active">Budget</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+    </div>
+
+    <main class="content-page">
+        <div class="container">
+            <h1>The Art of Budgeting</h1>
+            <p class="subtitle">Learn the fundamentals of creating a budget, different methods, and common pitfalls to avoid.</p>
+
+            <article class="content-article reveal">
+                <h2>How to Set Up a Budget</h2>
+                <p>Creating a budget is like drawing a roadmap for your money. Start by calculating your total monthly income. Then, list all your fixed expenses (like rent) and variable expenses (like dining out). The goal is to ensure your expenses don't exceed your income. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+
+            <article class="content-article reveal">
+                <h2>Types of Budgets</h2>
+                <p>There's no one-size-fits-all budget. Explore different methods to find what suits you:</p>
+                <ul>
+                    <li><strong>The 50/30/20 Rule:</strong> 50% of income for needs, 30% for wants, and 20% for savings.</li>
+                    <li><strong>Zero-Based Budgeting:</strong> Every dollar of income is assigned a job, so Income - Expenses = 0.</li>
+                    <li><strong>Envelope System:</strong> Use cash in physical envelopes for different spending categories to enforce limits.</li>
+                </ul>
+            </article>
+            
+            <article class="content-article reveal">
+                <h2>Common Mistakes to Avoid</h2>
+                <p>Even the best budget can fail if you fall into these common traps. Be mindful of:</p>
+                <ul>
+                    <li><strong>Being Unrealistic:</strong> A budget that leaves no room for enjoyment is one you're unlikely to stick with. Be honest and flexible.</li>
+                    <li><strong>Forgetting Irregular Expenses:</strong> Plan for annual subscriptions, gifts, or maintenance to avoid surprise budget-breakers.</li>
+                    <li><strong>Aiming for Perfection:</strong> Life happens. Don't abandon your entire budget after one mistake. Adjust and move forward.</li>
+                </ul>
+                <p><strong>Note:</strong></p>
+                <p>A budget is a powerful tool, but its success often depends on avoiding common traps that can lead to frustration. One of the biggest errors is creating a budget that's too restrictive; think of it as a sustainable plan, not a strict financial diet. Another frequent oversight is forgetting to account for irregular but predictable costs, like annual subscriptions, car maintenance, or holiday gifts. Finally, remember that a budget is a guide, not a rigid set of rules. The goal isn't perfection, but progress. If you have a bad month, don't give up—simply adjust and get back on track. Avoid being too restrictive, forgetting irregular expenses, or giving up after one bad month. A budget should be a flexible guide, not a rigid prison.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> Biztrack</a>
+                <p>A simple, clear, and informative website to help you manage your finances.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="expense.html">Expense</a></li>
+                    <li><a href="budget.html">Budget</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Biztrack. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="bottom-nav-link">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="expense.html" class="bottom-nav-link">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Expense</span>
+        </a>
+        <a href="budget.html" class="bottom-nav-link active">
+            <i class="fas fa-wallet"></i>
+            <span>Budget</span>
+        </a>
+        <a href="profile.html" class="bottom-nav-link">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+</body>
+</html>
